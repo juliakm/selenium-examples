@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://npr.hosted.jacksonriverdev.com/" />
+<title>onedollar_recurs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">onedollar_recurs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/npr-sandbox/duplicate-kplu-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-submitted-donation-amount-10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-submitted-donation-amount']/div[10]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-submitted-npr-premiums-fundraiser-premium-add-to-cart-form-28']/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-first-name</td>
+	<td>Julia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-last-name</td>
+	<td>Tester</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-address</td>
+	<td>111 Testing Lane</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-city</td>
+	<td>Durham</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-submitted-donor-information-state</td>
+	<td>label=Hawaii</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-zip</td>
+	<td>27705</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-mail</td>
+	<td>julia.kulla-mader+qa9@jacksonriver.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-submitted-use-billing-address-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-submitted-use-billing-address']/div/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-submitted-payment-information-payment-method-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-submitted-payment-information-payment-method']/div[2]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit--3</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
