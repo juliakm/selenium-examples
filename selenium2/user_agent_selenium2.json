@@ -1,0 +1,175 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://device-info.qa.jacksonriverdev.com/node/7"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-donation-amount-3"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-donor-information-first-name"
+      },
+      "text": "Julia"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-donor-information-last-name"
+      },
+      "text": "Tester"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-donor-information-mail"
+      },
+      "text": "julia"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-donor-information-mail"
+      },
+      "text": "julia.kulla-mader+qa1021@jacksonriver.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-billing-information-address"
+      },
+      "text": "222 "
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-billing-information-address"
+      },
+      "text": "222 Testing Lane"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-billing-information-address-line-2"
+      },
+      "text": "\\9"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-billing-information-city"
+      },
+      "text": "Durham"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='edit-submitted-billing-information-country']//option[2]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='edit-submitted-billing-information-state']//option[35]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='edit-submitted-billing-information-state']//option[35]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='edit-submitted-billing-information-state']//option[35]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "webform-component-billing-information--zip"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submitted-billing-information-zip']"
+      },
+      "text": "27705"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "webform-component-billing-information--zip"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-payment-information-payment-fields-credit-card-number"
+      },
+      "text": "4111111111111111"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='edit-submitted-payment-information-payment-fields-credit-expiration-date-card-expiration-year']//option[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//fieldset[@id='edit-submitted-payment-information-payment-fields-credit']//div[normalize-space(.)='CVV *']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-submitted-payment-information-payment-fields-credit-card-cvv"
+      },
+      "text": "123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
