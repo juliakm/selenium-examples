@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://49.qa.jacksonriverdev.com/" />
+<title>donation_multi_test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">donation_multi_test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/node/74</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-submitted-donation-amount-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-payment-information-payment-fields-credit-card-number</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-submitted-payment-information-payment-fields-credit-expiration-date-card-expiration-month</td>
+	<td>label=September</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-payment-information-payment-fields-credit-card-cvv</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-first-name</td>
+	<td>Julia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-last-name</td>
+	<td>Testing</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donor-information-mail</td>
+	<td>javascript{'julia.kulla-mader+' + Math.floor(Math.random()*11111) + '@jacksonriver.com'}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-billing-information-address</td>
+	<td>111 Testing Lane</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-billing-information-city</td>
+	<td>Durham</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-submitted-billing-information-state</td>
+	<td>label=North Carolina</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-billing-information-zip</td>
+	<td>27705</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-donation-other-amount</td>
+	<td>89.09</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
