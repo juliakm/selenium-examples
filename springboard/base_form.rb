@@ -19,6 +19,16 @@ class BaseForm
     find(locator).send_keys text
   end
 
+  def wait_for (seconds = 15)
+      Selenium::WebDriver::Wait.new(timeout: seconds).until { yield }
+  end
+
+  def setrecurs (bool, locator)
+    if bool == '1'
+        find(locator).click
+    end
+  end
+
   #Try to get this working
   def dropdown(text, locator)
     dropdown_list = @driver.find_element(locator)
