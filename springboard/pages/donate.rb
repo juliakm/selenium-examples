@@ -2,9 +2,10 @@
 require_relative 'base_form'
 
 class Donate < BaseForm
+# DONATION_TOTAL = { id: 'edit-submitted-donation-other-amount' }
   DONATE_FORM = { class: 'node-type-donation-form' }
   SUBMIT_BUTTON   = { id: 'edit-submit'  }
-  SUCCESS_MESSAGE = { css: '.alert.status' }
+  SUCCESS_MESSAGE = { css: '.webform-confirmation' }
   FAILURE_MESSAGE = { css: '.alert.error' }
   FIRST_NAME = { id: 'edit-submitted-donor-information-first-name' }
   LAST_NAME  = { id: 'edit-submitted-donor-information-last-name' }
@@ -21,7 +22,7 @@ class Donate < BaseForm
 
   def initialize(driver)
     super
-    visit 'http://492.qa.jacksonriverdev.com'
+    visit '/node/3'
     raise 'Form not ready' unless
       is_displayed?(DONATE_FORM)
     end
@@ -40,13 +41,11 @@ class Donate < BaseForm
     dropdown creditexp, CREDIT_EXP
     setrecurs recurs, RECURRING
 
-    #find(RECURRING).click
-
     @driver.find_element(SUBMIT_BUTTON).click
   end
 
   def success_message_present?
-    wait_for(15) { is_displayed? SUCCESS_MESSAGE }
+    wait_for(10) { is_displayed? SUCCESS_MESSAGE }
   end
 
   def failure_message_present?

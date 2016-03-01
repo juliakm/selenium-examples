@@ -1,18 +1,20 @@
-# filename: springboard_donate.rb
+# filename: spec_springboard_donate.rb
 require 'faker'
 require 'selenium-webdriver'
-require_relative 'donate'
+require_relative '../pages/donate'
+require_relative 'spec_helper'
 
   describe 'Donate' do
 
     before(:each) do
-      @driver = Selenium::WebDriver.for :firefox
+      # @driver = Selenium::WebDriver.for :firefox
+      # @donate = Donate.new(@driver)
       @donate = Donate.new(@driver)
     end
 
-    after(:each) do
-      @driver.quit
-    end
+    # after(:each) do
+    #   @driver.quit
+    # end
 
   it 'one-time succeeded' do
     @donate.with(Faker::Name.first_name, Faker::Name.last_name, "julia.kulla-mader+#{rand(252...4350)}@jacksonriver.com",Faker::Address.street_address, 'Durham', 'United States', 'California', Faker::Address.postcode, '4111111111111111', '2017','123','0')

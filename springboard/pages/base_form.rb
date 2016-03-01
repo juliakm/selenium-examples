@@ -7,8 +7,8 @@ class BaseForm
     @driver = driver
   end
 
-  def visit(url)
-    @driver.get url
+  def visit(url_path)
+    @driver.get ENV['base_url'] + url_path
   end
 
   def find(locator)
@@ -20,7 +20,7 @@ class BaseForm
   end
 
   def wait_for (seconds = 15)
-      Selenium::WebDriver::Wait.new(timeout: seconds).until { yield }
+    Selenium::WebDriver::Wait.new(timeout: seconds).until { yield }
   end
 
   def setrecurs (bool, locator)
