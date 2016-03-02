@@ -1,0 +1,14 @@
+def launch_with(config_filename)
+  system("parallel_rspec --test-options '-r ./config/#{config_filename} --order random' spec")
+end
+
+desc 'Run tests locally'
+task :local, :browser do |t, args|
+  ENV['browser'] = args[:browser]
+  launch_with('local.rb')
+end
+
+desc "Run tests in Sauce Labs"
+task :cloud do
+  launch_with('cloud.rb')
+end

@@ -1,8 +1,8 @@
 # filename: spec_springboard_donate.rb
 require 'faker'
-require 'selenium-webdriver'
-require_relative '../pages/donate'
+#require 'selenium-webdriver'
 require_relative 'spec_helper'
+require_relative '../pages/donate'
 
   describe 'Donate' do
 
