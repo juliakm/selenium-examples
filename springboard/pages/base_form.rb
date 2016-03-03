@@ -29,7 +29,6 @@ class BaseForm
     end
   end
 
-  #Try to get this working
   def dropdown(text, locator)
     dropdown_list = @driver.find_element(locator)
     select_list = Selenium::WebDriver::Support::Select.new(dropdown_list)
