@@ -22,7 +22,7 @@ class Donate < BaseForm
 
   def initialize(driver)
     super
-    visit '/node/3'
+    visit '/node/2'
     raise 'Form not ready' unless
       is_displayed?(DONATE_FORM)
     end

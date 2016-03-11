@@ -10,9 +10,9 @@ RSpec.configure do |config|
       caps = Selenium::WebDriver::Remote::Capabilities.new
       caps["name"] = "Selenium Test Example"
       caps["build"] = "jacksonriver"
-      caps["browser_api_name"] = "IE10"
-      caps["os_api_name"] = "Win7x64-C2"
-      caps["screen_resolution"] = "1024x768"
+      caps["browser_api_name"] = "MblChrome35"
+      caps["os_api_name"] = "GalaxyS5-And44"
+      caps["screen_resolution"] = "1080x1920"
       caps["record_video"] = "false"
       caps["record_network"] = "false"
 

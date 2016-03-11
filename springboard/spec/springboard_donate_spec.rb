@@ -20,6 +20,11 @@ require_relative '../pages/donate'
     expect(@donate.success_message_present?).to eql true
   end
 
+  it 'recurring succeeded - auto-cancel' do
+    @donate.with(Faker::Name.first_name, Faker::Name.last_name, "julia.kulla-mader+#{rand(252...4350)}@jacksonriver.com",Faker::Address.street_address, 'Durham', 'United States', 'California', '55555', '4111111111111111', '2017','123','1')
+    expect(@donate.success_message_present?).to eql true
+  end
+
   it 'failed' do
     @donate.with('Julia', 'Tester', 'julia.kulla-mader+test@jacksonriver.com','111 Testing Lane', 'Durham', 'United States', 'North Carolina', '27705', '0000000000000000', '2016','123','1')
     expect(@donate.failure_message_present?).to eql true
